@@ -6,7 +6,7 @@ import * as fs from 'fs';
 export class ProductService {
   private readonly dbPath = 'data/products.json';
 
-  findAll(): string {
+  findAll() {
     const filePath = path.resolve(process.cwd(), 'data/products.json');
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(fileContent);
