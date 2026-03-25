@@ -17,7 +17,9 @@ import { ProductService } from './products/product.service';
     {
       provide: APP_FILTER,
       useClass: ApiExceptionFilter,
-    },PurchaseService,ProductService
+    },
+    PurchaseService,
+    ProductService,
   ],
 })
 export class AppModule {}
