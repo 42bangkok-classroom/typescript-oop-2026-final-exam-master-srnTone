@@ -1,5 +1,3 @@
-import { ApiResponse } from "src/interfaces/response.interface";
-
 export interface Product {
   id: number;
   name: string;
@@ -10,6 +8,6 @@ export interface Product {
 
 export interface ProductItem {
   productId: number;
-  quantity : number;
+  quantity: number;
   price: number;
 }

@@ -6,9 +6,9 @@ import * as fs from 'fs';
 export class PurchaseService {
   private readonly dbPath = 'data/purchases.json';
 
-  findAll() {
+  findAll(): string {
     const filePath = path.resolve(process.cwd(), 'data/purchases.json');
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(fileContent);
+    const fileContents = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(fileContents);
   }
 }

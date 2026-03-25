@@ -17,4 +17,3 @@ import { PurchaseModule } from './purchases/purchase.module';
   ],
 })
 export class AppModule {}
- 
